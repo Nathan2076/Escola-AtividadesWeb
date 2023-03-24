@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Checagem de Números</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Checagem de Número Par/ímpar</h2>
+
+    <script type="text/javascript">
+        var checkDivision = function(num1) {
+            var result = num1 % 2;
+
+            if (result == 0) {
+                alert("O número informado é par.");
+            }
+            else
+            {
+                alert("O número informado é ímpar.")
+            }
+        }
+
+        var valor1 = parseInt(prompt("Informe o número a ser checado:"));
+        checkDivision(valor1);
+    </script>
+</body>
+</html>

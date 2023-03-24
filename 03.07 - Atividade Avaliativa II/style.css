@@ -1,0 +1,22 @@
+body {
+    background-color: #161b22;
+    color: #c9d1d9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+pre, code {
+    border-radius: 6px;
+    width: fit-content;
+}
+
+pre {
+    background-color: rgba(110,118,129,0.4);
+    padding: 30px;
+}
+
+code:not(.snippet) {
+    background-color: rgba(110,118,129,0.4);
+    padding: .2em .4em;
+}

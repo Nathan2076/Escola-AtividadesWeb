@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Calculadora</h2>
+
+    <p id="valor1"></p>
+    <p id="operacao"></p>
+    <p id="valor2"></p>
+
+    <script type="text/javascript">
+        var somar = function(num1, num2) {
+            result = num1 + num2;
+        }
+
+        var subtrair = function(num1, num2) {
+            result = num1 - num2;
+        }
+
+        var multiplicar = function(num1, num2) {
+            result = num1 * num2;
+        }
+
+        var dividir = function(num1, num2) {
+            result = num1 / num2;
+        }
+
+        var valor1 = parseInt(prompt("Informe o primeiro número."));
+        document.getElementById("valor1").innerHTML = "Primeiro valor: " + valor1;
+        
+        var operacao = prompt("Informe a operação. (* = multiplicação; / = divisão)")
+        document.getElementById("valor1").innerHTML = "Operação selectionada: " + operacao;
+
+        var valor2 = parseInt(prompt("Informe o segundo número."));
+        document.getElementById("valor1").innerHTML = "Segundo valor: " + valor2;
+
+        var result;
+
+        switch (operacao) {
+            case "+":
+                somar(valor1, valor2);
+                break;
+
+            case "-":
+                subtrair(valor1, valor2);
+                break;
+
+            case "*":
+                multiplicar(valor1, valor2);
+                break;
+                
+            case "/":
+                dividir(valor1, valor2);
+                break;
+        }
+
+        alert("O resultado desse cálculo é: " + result);
+    </script>
+</body>
+</html>

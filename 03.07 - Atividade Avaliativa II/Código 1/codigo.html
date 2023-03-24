@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Encontrar String em Texto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
+</head>
+<body>
+    <h2>Encontrar uma String em um Texto</h2>
+    <p id="status">Status: </p>
+    <br />
+    <p>Explicação disponível <a href="./explicacao.html">neste documento</a>.</p>
+    <p>Pego do 4º exemplo disponível <a href="https://terminalroot.com.br/2016/12/alguns-codigos-simples-de-javascript-2.html" target="_blank">neste site</a>.</p>
+
+    <script type="text/javascript">
+        var str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim ligula, faucibus nec pretium non, congue ut odio. Donec eget ligula quis purus pharetra molestie. Curabitur at consectetur nunc, ac vehicula tortor. Suspendisse blandit massa nec purus rutrum, ut finibus sem placerat. Donec mollis ligula vel urna egestas, a feugiat.";
+
+        if (str.match(/amet/))
+        {
+            document.getElementById("status").innerHTML += "Expressão Encontrada.";
+        }
+        else
+        {
+            document.getElementById("status").innerHTML += "Expressão Não Encontrada.";
+        }
+    </script>
+</body>
+</html>

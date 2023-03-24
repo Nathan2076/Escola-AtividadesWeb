@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Substituir String em Texto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
+</head>
+<body>
+    <h2>Substituir uma String em um Texto</h2>
+<pre>
+<code class="snippet">
+var originalText = document.getElementById("original-text").innerHTML;
+
+document.getElementById("modified-text").innerHTML = originalText.replace("dolor", "&lt;em&gt;color&lt;/em&gt;");
+</code>
+</pre>
+    <p>O código possui uma variável <code>originalText</code> na primeira linha, que guarda o valor do texto base (original).</p>
+    <p>O código presente na terceira linha modifica o HTML interno do elemento com o ID <code>modified-text</code> que, até então, está vazio, e aplica o texto original com as modificações, feitas através da função nativa <code>{variavel}.replace()</code>, que leva dois argumentos: a expressão a ser encontrada no texto original e a expressão a substituir a original, respectivamente.</p>
+    <p>Por fim, ambos os textos são mostrados ao usuário, possibilitando a verificação das diferenças entre os mesmos. A modificação aplicada recebe ênfase com a tag &lt;em&gt;&lt;/em&gt;.</p>
+    <p>Você pode voltar ao exemplo clicando <a href="./codigo.html">aqui</a>.</p>
+</body>
+</html>
