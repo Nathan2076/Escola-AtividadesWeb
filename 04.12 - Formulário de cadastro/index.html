@@ -9,15 +9,111 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div>
-        <h3>Cadastro</h3>
+    <div id="page">
+    <div id="form">
+        <h2>Cadastro</h2>
+        <br>
         <form>
-            <input type="email" id="email" placeholder="Digite seu email" />
+            <div class="double section">
+                <div>
+                    <label for="name">Nome</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Nome Completo" required />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Ex: john.doe@mail.com" required />
+                </div>
+            </div>
             <br>
-            <input type="password" id="senha" placeholder="Digite sua senha" />
+            <hr>
             <br>
-            <button onclick="">ACESSAR</button>
+            <div class="section">
+                <div>
+                    <label for="phone">Telefone</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" placeholder="Ex: (43) 3321-3635" required />
+                </div>
+                <div>
+                    <label for="birthdate">Data de nascimento</label>
+                    <br>
+                    <input type="date" id="birthdate" name="birthdate" required />
+                </div>
+                <div>
+                    <label for="cpf">CPF</label>
+                    <br>
+                    <input type="tel" id="cpf" name="cpf" placeholder="Ex: 123.456.789-00" required />
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="section">
+                <div>
+                    <label for="cep">CEP</label>
+                    <br>
+                    <input type="tel" id="cep" name="cep" placeholder="Ex: 86087-000" required />
+                </div>
+                <div>
+                    <label for="address">Endereço</label>
+                    <br>
+                    <input type="text" id="address" name="address" placeholder="Ex: Rua Abílio Justiniano de Queirós" required />
+                </div>
+                <div>
+                    <label for="number">Número</label>
+                    <br>
+                    <input type="number" id="number" name="number" placeholder="Ex: 350" required />
+                </div>
+            </div>
+            <div class="double section">
+                <div>
+                    <label for="complement">Complemento</label>
+                    <br>
+                    <input type="text" id="complement" name="complement" placeholder="Ex: Bloco 1, Apartamento 5" />
+                </div>
+                <div>
+                    <label for="neighborhood">Bairo</label>
+                    <br>
+                    <input type="text" id="neighborhood" name="neighborhood" placeholder="Ex: João Paz" required />
+                </div>
+            </div>
+            <div class="section">
+                <div>
+                    <label for="city">Cidade</label>
+                    <br>
+                    <input type="text" id="city" name="city" placeholder="Ex: Londrina" required />
+                </div>
+                <div>
+                    <label for="state">Estado</label>
+                    <br>
+                    <input type="text" id="state" name="state" placeholder="Ex: PR" required />
+                </div>
+                <div>
+                    <label for="reference">Ponto de referência</label>
+                    <br>
+                    <input type="text" id="reference" name="reference" placeholder="Ex: Próximo do Olympia" />
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="double section">
+                <div>
+                    <label for="password">Senha</label>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required />
+                </div>
+                <div>
+                    <label for="password-confirm">Confirme a senha</label>
+                    <br>
+                    <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirme sua senha" required />
+                </div>
+            </div>
+            <br>
+            <button onclick="validateForm()">ACESSAR</button>
         </form>
     </div>
+</div>
 </body>
 </html>
