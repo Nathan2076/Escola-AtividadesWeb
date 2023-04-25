@@ -33,7 +33,7 @@
                 <div>
                     <label for="phone">Telefone</label>
                     <br>
-                    <input type="tel" id="phone" name="phone" placeholder="Ex: (43) 3321-3635" required />
+                    <input type="tel" id="phone" name="phone" maxlength="11" placeholder="Ex: 43933213635" required />
                 </div>
                 <div>
                     <label for="birthdate">Data de nascimento</label>
@@ -43,7 +43,7 @@
                 <div>
                     <label for="cpf">CPF</label>
                     <br>
-                    <input type="tel" id="cpf" name="cpf" placeholder="Ex: 123.456.789-00" required />
+                    <input type="tel" id="cpf" name="cpf" maxlength="11" placeholder="Ex: 12345678900" required />
                 </div>
             </div>
             <br>
@@ -53,7 +53,7 @@
                 <div>
                     <label for="cep">CEP</label>
                     <br>
-                    <input type="tel" id="cep" name="cep" placeholder="Ex: 86087-000" required />
+                    <input type="tel" id="cep" name="cep" maxlength="8" placeholder="Ex: 86087000" required />
                 </div>
                 <div>
                     <label for="address">Endereço</label>
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <br>
-            <button onclick="validateForm()">ACESSAR</button>
+            <button type="submit" onclick="validateForm()">ACESSAR</button>
         </form>
     </div>
 </div>
